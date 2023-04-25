@@ -32,7 +32,7 @@ type props = {
 export default function GetComponent({ name, props }: props) {
   switch (name) {
     case "ButtonMsg": // El nombre de como lo llamaras en RenderJSON
-      return <ButtonMsg />;
+      return <ButtonMsg {...props} />;
     default:
       <h1>No haz seleccionado un componente</h1>;
   }
